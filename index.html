@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Survey Form</title>
-	</head>
-	<body>
-		<div>
-			<h1 id="title" class="text-center">Survey Form</h1>
-			<p id="description" class="description text-center">
-				Thank you for taking the time to help us improve the platform
-			</p>
-			<form action="" id="survey-form">
-				<div>
-					<label for="name" id="name-label"
-						>Name:
-						<input
-							type="text"
-							id="name"
-							placeholder="Enter your name here"
-							required
-					/></label>
-				</div>
-				<div>
-					<label for="email" id="email-label"
-						>Email:
-						<input
-							type="email"
-							id="email"
-							placeholder="Enter your email here"
-							required
-					/></label>
-				</div>
-				<div>
-					<label id="number-label" for="number"
-						>Age<span class="clue"> (optional)</span></label
-					>
-					<input
-						type="number"
-						name="age"
-						id="number"
-						min="10"
-						max="99"
-						class="form-control"
-						placeholder="Age"
-					/>
-				</div>
-			</form>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form action="" id="survey-form">
+        <div>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name here"
+              required
+          /></label>
+        </div>
+        <div>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email here"
+              required
+          /></label>
+        </div>
+        <div>
+          <label id="number-label" for="number"
+            >Age<span class="clue"> (optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div>
+          <p>What is your favourite fruit?</p>
+          <select name="fruit" id="dropdown" required>
+            <option disabled selected value>--select favourite fruit--</option>
+            <option value="banana">banana</option>
+            <option value="oranges">oranges</option>
+            <option value="pineapple">pineapple</option>
+            <option value="watermelon">watermelon</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
