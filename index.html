@@ -7,9 +7,9 @@
   </head>
   <body>
     <div>
-      <h1 id="title" class="text-center">Survey Form</h1>
+      <h1 id="title" class="text-center">Program Survey Form</h1>
       <p id="description" class="description text-center">
-        Thank you for taking the time to help us improve the platform
+        Thank you for your time to answer this survey!
       </p>
       <form action="" id="survey-form">
         <div>
@@ -47,14 +47,85 @@
           />
         </div>
         <div>
-          <p>What is your favourite fruit?</p>
-          <select name="fruit" id="dropdown" required>
-            <option disabled selected value>--select favourite fruit--</option>
-            <option value="banana">banana</option>
-            <option value="oranges">oranges</option>
-            <option value="pineapple">pineapple</option>
-            <option value="watermelon">watermelon</option>
+          <p>
+            What specific field sparked your interest in learning programming?
+          </p>
+          <select name="category" id="dropdown" required>
+            <option disabled selected value>--select one--</option>
+            <option value="1">Software Development</option>
+            <option value="2">Game Development</option>
+            <option value="3">Cybersecurity</option>
+            <option value="4">Networking</option>
+            <option value="5">Web Development</option>
+            <option value="6">Data Science & Analytics</option>
+            <option value="7">Other</option>
           </select>
+        </div>
+        <div>
+          <p>
+            What motivates you to learn programming? (Select all that apply)
+          </p>
+          <label>
+            <input type="checkbox" value="career" />Career Opportunities
+          </label>
+          <label>
+            <input type="checkbox" value="challenge-self" />Challenging Yourself
+          </label>
+          <label>
+            <input type="checkbox" value="create-things" />Building Something
+          </label>
+          <label>
+            <input type="checkbox" value="learning" />Expanding Knowledge
+          </label>
+          <label>
+            <input type="checkbox" value="generate-ideas" />Expressing
+            Creativity
+          </label>
+          <label>
+            <input type="checkbox" value="Innovating" />Innovating
+          </label>
+          <label>
+            <input type="checkbox" value="inspiring-others" />Inspiring Others
+          </label>
+          <label>
+            <input type="checkbox" value="efficiency" />Enhancing Efficiency
+          </label>
+          <label>
+            <input type="checkbox" value="gain-experience" />Gaining New
+            Experience
+          </label>
+          <label>
+            <input type="checkbox" value="solve-problem" />Solving Problems
+          </label>
+          <label> <input type="checkbox" value="others" />Others </label>
+        </div>
+        <div>
+          <p>How do you feel about the process of learning programming?</p>
+          <label for=""
+            ><input type="radio" name="interest" value="1" /> Interested</label
+          >
+          <label for=""
+            ><input type="radio" name="interest" value="2" /> Somewhat
+            Interested</label
+          >
+          <label for=""
+            ><input type="radio" name="interest" value="3" /> Neutral</label
+          >
+          <label for=""
+            ><input type="radio" name="interest" value="4" />
+            Uninterested</label
+          >
+        </div>
+        <div>
+          <p>What aspects of programming would you like to learn more about?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button>
         </div>
       </form>
     </div>
