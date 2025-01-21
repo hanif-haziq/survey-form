@@ -1,3 +1,20 @@
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://media.istockphoto.com/id/2154744783/photo/abstract-red-blue-background-vortex-technological-concept.jpg?s=612x612&w=is&k=20&c=qGZ_Zb94nrd9iO73o3hqthfVvteFOy63HwmhOQbaVLc=);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 body {
   display: block;
   font-family: "Poppins", sans-serif;
@@ -13,8 +30,21 @@ label {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
 }
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 form {
   background: rgba(96, 125, 139, 0.5);
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
+}
+.text-center {
+  color: whitesmoke;
+  text-align: center;
 }
