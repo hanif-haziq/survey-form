@@ -13,33 +13,35 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <h1 id="title" class="text-center">Program Survey Form</h1>
       <p id="description" class="description text-center">
         Thank you for your time to answer this survey!
       </p>
       <form action="" id="survey-form">
-        <div>
+        <div class="form-group">
           <label for="name" id="name-label"
             >Name:
             <input
               type="text"
               id="name"
+              class="form-control"
               placeholder="Enter your name here"
               required
           /></label>
         </div>
-        <div>
+        <div class="form-group">
           <label for="email" id="email-label"
             >Email:
             <input
               type="email"
               id="email"
+              class="form-control"
               placeholder="Enter your email here"
               required
           /></label>
         </div>
-        <div>
+        <div class="form-group">
           <label id="number-label" for="number"
             >Age<span class="clue"> (optional)</span></label
           >
@@ -47,17 +49,18 @@
             type="number"
             name="age"
             id="number"
+            class="form-control"
             min="10"
             max="99"
             class="form-control"
             placeholder="Age"
           />
         </div>
-        <div>
+        <div class="form-group">
           <p>
             What specific field sparked your interest in learning programming?
           </p>
-          <select name="category" id="dropdown" required>
+          <select name="category" id="dropdown" class="form-control">
             <option disabled selected value>--select one--</option>
             <option value="1">Software Development</option>
             <option value="2">Game Development</option>
@@ -68,70 +71,134 @@
             <option value="7">Other</option>
           </select>
         </div>
-        <div>
+        <div class="form-group">
           <p>
             What motivates you to learn programming? (Select all that apply)
           </p>
           <label>
-            <input type="checkbox" value="career" />Career Opportunities
+            <input type="checkbox" class="input-checkbox" "career" />Career
+            Opportunities
           </label>
           <label>
-            <input type="checkbox" value="challenge-self" />Challenging Yourself
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="challenge-self"
+            />Challenging Yourself
           </label>
           <label>
-            <input type="checkbox" value="create-things" />Building Something
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="create-things"
+            />Building Something
           </label>
           <label>
-            <input type="checkbox" value="learning" />Expanding Knowledge
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="learning"
+            />Expanding Knowledge
           </label>
           <label>
-            <input type="checkbox" value="generate-ideas" />Expressing
-            Creativity
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="generate-ideas"
+            />Expressing Creativity
           </label>
           <label>
-            <input type="checkbox" value="Innovating" />Innovating
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="Innovating"
+            />Innovating
           </label>
           <label>
-            <input type="checkbox" value="inspiring-others" />Inspiring Others
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="inspiring-others"
+            />Inspiring Others
           </label>
           <label>
-            <input type="checkbox" value="efficiency" />Enhancing Efficiency
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="efficiency"
+            />Enhancing Efficiency
           </label>
           <label>
-            <input type="checkbox" value="gain-experience" />Gaining New
-            Experience
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="gain-experience"
+            />Gaining New Experience
           </label>
           <label>
-            <input type="checkbox" value="solve-problem" />Solving Problems
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="solve-problem"
+            />Solving Problems
           </label>
-          <label> <input type="checkbox" value="others" />Others </label>
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              value="others"
+            />Others
+          </label>
         </div>
-        <div>
+        <div class="form-group">
           <p>How do you feel about the process of learning programming?</p>
           <label for=""
-            ><input type="radio" name="interest" value="1" /> Interested</label
-          >
-          <label for=""
-            ><input type="radio" name="interest" value="2" /> Somewhat
+            ><input
+              type="radio"
+              class="input-radio"
+              name="interest"
+              value="1"
+            />
             Interested</label
           >
           <label for=""
-            ><input type="radio" name="interest" value="3" /> Neutral</label
+            ><input
+              type="radio"
+              class="input-radio"
+              name="interest"
+              value="2"
+            />
+            Somewhat Interested</label
           >
           <label for=""
-            ><input type="radio" name="interest" value="4" />
+            ><input
+              type="radio"
+              class="input-radio"
+              name="interest"
+              value="3"
+            />
+            Neutral</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              class="input-radio"
+              name="interest"
+              value="4"
+            />
             Uninterested</label
           >
         </div>
-        <div>
+        <div class="form-group">
           <p>What aspects of programming would you like to learn more about?</p>
           <textarea
             name="comment"
             id="comment"
+            class="input-textarea"
             placeholder="Enter your comments here..."
           ></textarea>
         </div>
-        <div>
+        <div class="form-group">
           <button type="submit" id="submit">Submit</button>
         </div>
       </form>
